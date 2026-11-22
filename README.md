@@ -1,16 +1,21 @@
-## Hi there 👋
+# Surya Pratap Dubey
 
-<!--
-**avidubey06/avidubey06** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Cybersecurity Analysis · Defensive Security Research · Applied AI**
 
-Here are some ideas to get you started:
+I’m interested in how security teams turn raw logs into decisions. My focus is on investigating suspicious activity, testing detections, and evaluating where AI can help an analyst review evidence.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Focus areas
+
+- **Security operations** — Analyze authentication events, build incident timelines, and document triage and escalation decisions.
+- **Defensive research** — Test detection ideas against both suspicious and benign samples, then document false positives and coverage gaps.
+- **Applied AI** — Evaluate AI-generated alert summaries for factual accuracy, evidence quality, and usefulness in analyst workflows.
+
+## Portfolio roadmap
+
+| Project | Scope |
+| --- | --- |
+| **SOC Alert Triage Lab** | Investigate synthetic authentication logs and produce a sample incident report. |
+| **Detection Engineering Lab** | Write Sigma rules and test them against labeled event samples. |
+| **AI Alert Triage Evaluator** | Compare AI summaries with a rule-based baseline and measure unsupported claims. |
+
+**Role interests** · SOC Analyst · Cybersecurity Associate · Security Research
