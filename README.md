@@ -1,24 +1,11 @@
 # Surya Pratap Dubey
 
-**Cybersecurity Analysis · Defensive Security Research · Applied AI**
+I'm focused on defensive cybersecurity, especially log analysis and alert triage. I'm also interested in how AI can help analysts review alerts and how to check its output against the evidence.
 
-I’m interested in how security teams turn raw logs into decisions. My focus is on investigating suspicious activity, testing detections, and evaluating where AI can help an analyst review evidence.
+## Project
 
-## Focus areas
+**[SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab)**
 
-- **Security operations** — Analyze authentication events, build incident timelines, and document triage and escalation decisions.
-- **Defensive research** — Test detection ideas against both suspicious and benign samples, then document false positives and coverage gaps.
-- **Applied AI** — Evaluate AI-generated alert summaries for factual accuracy, evidence quality, and usefulness in analyst workflows.
+A Python practice lab that flags repeated failed sign-ins followed by a success. The write-up walks through one alert from synthetic data, explains what the log supports, and records what an analyst would need before escalating. The repository includes the sample logs and five tests for the detection rule.
 
-## Featured project
-
-**[SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab)** — A runnable Python lab that correlates synthetic login events and walks through a sample incident investigation.
-
-## Portfolio roadmap
-
-| Project | Scope |
-| --- | --- |
-| **Detection Engineering Lab** | Write Sigma rules and test them against labeled event samples. |
-| **AI Alert Triage Evaluator** | Compare AI summaries with a rule-based baseline and measure unsupported claims. |
-
-**Role interests** · SOC Analyst · Cybersecurity Associate · Security Research
+I’m interested in SOC analyst and cybersecurity associate roles.
