@@ -2,6 +2,8 @@
 
 I'm focused on defensive cybersecurity, especially log analysis and alert triage. I'm also interested in how AI can help analysts review alerts and how to check its output against the evidence.
 
+[View my portfolio website](https://avidubey06.github.io/avidubey06/)
+
 ## Projects
 
 **[SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab)**
