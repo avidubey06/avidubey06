@@ -1,14 +1,28 @@
 # LTE core operations lab
-     
+
 This self-contained lab models LTE attach outcomes with synthetic event records. It demonstrates first-pass fault isolation across access, transport and the Evolved Packet Core (EPC). The CSV is a teaching fixture with deliberately frequent failures.
 
 ## Quick start
 
-From the profile repository root, run this with Python 3. No external packages are required.
+From the profile repository root, run the [analyzer](triage.py) with Python 3 and the [sample CSV](attempts.csv). No external packages are required.
 
 ```sh
 python3 telecom/triage.py telecom/attempts.csv
 ```
+
+Expected output for the bundled fixture:
+
+```text
+Attempts: 10
+Attach success: 5/10 (50.0%)
+Median successful attach latency: 220 ms
+auth_timeout: 2 | s6a_auth | first check: core/authentication
+profile_missing: 1 | s6a_location_update | first check: core/subscriber provisioning
+session_timeout: 1 | s11_create_session | first check: core/session establishment
+transport_timeout: 1 | s1_initial_ue | first check: RAN/transport
+```
+
+Each CSV row represents one completed or failed attempt. Supply a unique `attempt_id`, an `outcome`, its matching `stage`, and a non-negative integer `latency_ms`. The analyzer checks stage and outcome against a fixed mapping. It groups records that already have a stage label. The incident walkthrough is where that evidence is interpreted.
 
 | KPI | Calculation | Fixture result |
 | --- | --- | --- |
