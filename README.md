@@ -1,30 +1,19 @@
 # Surya Pratap Dubey
 
-**B.Tech Computer Science graduate · Mobile core networks and IP operations**
+**Computer Science graduate working on mobile core troubleshooting and Python log analysis.**
 
-I’m pursuing graduate engineering roles in telecom core operations. My focus is tracing how a mobile session is established, interpreting service KPIs and documenting the evidence behind an escalation.
+## [LTE Core Operations Lab](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md)
+
+When an LTE attach fails, where would I look first? In this lab I follow the signalling from the eNodeB to the mobile core, then use Python to group synthetic failures by the last recorded stage. Two attempts time out during S6a authentication. The walkthrough explains what I’d check on the MME and HSS before escalating.
+
+[Follow the attach and incident walkthrough](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md) · [Read the analyzer](https://github.com/avidubey06/avidubey06/blob/main/telecom/triage.py) · [Inspect the sample CSV](https://github.com/avidubey06/avidubey06/blob/main/telecom/attempts.csv)
+
+## [SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab#case-review)
+
+Three failed sign-ins followed by a success trigger one alert in the sample. I’d keep it open for review and look for MFA or device records before escalating. The [detection benchmark](https://github.com/avidubey06/soc-alert-triage-lab/blob/main/benchmarks/README.md#detection-engineering-benchmark) shows how changing the threshold and time window affects which cases the rule catches.
+
+## Background
+
+B.Tech in Computer Science, Baderia Global Institute of Engineering and Management. My networking coursework included IP subnetting, VLANs and Wireshark packet analysis. I’ve also studied UMTS and GSM/GPRS fundamentals.
 
 [LinkedIn](https://www.linkedin.com/in/surya-pratap-dubey-7ba104142/) · [Portfolio](https://avidubey06.github.io/avidubey06/)
-
-## Featured work
-
-### [LTE Core Operations Lab](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md)
-
-Follow an LTE attach across the eNodeB, MME, HSS and gateway, then run a Python triage tool against synthetic attempt records. The lab shows how authentication timeouts, subscriber profile errors and transport symptoms lead to different first checks. It includes an incident walkthrough and a validation checklist for provisioning, charging, roaming and node rollout.
-
-[Lab walkthrough](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md) · [Python analyzer](https://github.com/avidubey06/avidubey06/blob/main/telecom/triage.py) · [Sample data](https://github.com/avidubey06/avidubey06/blob/main/telecom/attempts.csv)
-
-| Area | What I study or practice |
-| --- | --- |
-| Mobile core | LTE/EPC attach and session establishment, 3G UMTS and 2G GSM/GPRS fundamentals |
-| Signalling | Diameter, GTP and SIP fundamentals, interface-by-interface call-flow analysis |
-| IP networking | TCP/IP, DNS, subnetting, VLANs, ACLs and routing fundamentals |
-| Operations | Python log analysis, Wireshark packet inspection, KPI interpretation and incident documentation |
-
-### [SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab)
-
-A Python practice lab for log correlation and evidence-based escalation. Includes sample events, detection tests and a benchmark that explores false positives and missed detections.
-
-## Education and training
-
-B.Tech in Computer Science, Baderia Global Institute of Engineering and Management. Cisco Networking Academy coursework and Microsoft Azure Fundamentals (AZ-900).
