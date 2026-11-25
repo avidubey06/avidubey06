@@ -6,11 +6,11 @@ I’m Surya, a computer science graduate interested in how mobile networks handl
 
 I’d match transaction IDs and timestamps between the MME and HSS to see where the exchange stopped. The event trace shows a successful request and response alongside an attempt where the MME recorded a timeout.
 
-[Follow the two failed attempts](https://github.com/avidubey06/lte-core-operations-lab#incident-walkthrough) · [Read the analyzer](https://github.com/avidubey06/lte-core-operations-lab/blob/main/triage.py) · [Inspect the sample CSV](https://github.com/avidubey06/lte-core-operations-lab/blob/main/attempts.csv)
+[Compare a successful attach and a timeout](https://github.com/avidubey06/lte-core-operations-lab#compare-a-successful-attach-and-a-timeout) · [View the event CSV](https://github.com/avidubey06/lte-core-operations-lab/blob/main/attach-events.csv) · [Read the analyzer](https://github.com/avidubey06/lte-core-operations-lab/blob/main/triage.py) · [Inspect the sample CSV](https://github.com/avidubey06/lte-core-operations-lab/blob/main/attempts.csv)
 
 ## [SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab#case-review)
 
-Three failed sign-ins followed by a success trigger one alert in the sample. I’d keep it open for review and look for MFA or device records before escalating. The [detection benchmark](https://github.com/avidubey06/soc-alert-triage-lab/blob/main/benchmarks/README.md#detection-engineering-benchmark) compares two settings on 240 synthetic holdout cases. Changing the rule from three failures in 10 minutes to four in 20 cut false positives from 40 to 20. Both settings missed all 40 distributed-source cases.
+Three failed sign-ins followed by a success trigger one alert in the sample. I’d keep it open for review and look for MFA or device records before escalating. The [detection benchmark](https://github.com/avidubey06/soc-alert-triage-lab/blob/main/benchmarks/README.md#detection-engineering-benchmark) shows the trade-off. On 240 synthetic holdout cases, the tuned rule cut false positives from 40 to 20. Both rule settings missed all 40 distributed-source cases, and the tuned rule missed eight rapid cases.
 
 ## Background
 
