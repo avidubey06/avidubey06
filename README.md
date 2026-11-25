@@ -1,17 +1,30 @@
 # Surya Pratap Dubey
 
-I'm focused on defensive cybersecurity, especially log analysis and alert triage. I'm also interested in how AI can help analysts review alerts and how to check its output against the evidence.
+**B.Tech Computer Science graduate · Mobile core networks and IP operations**
 
-[Portfolio website](https://avidubey06.github.io/avidubey06/)
+I’m pursuing graduate engineering roles in telecom core operations. My focus is tracing how a mobile session is established, interpreting service KPIs and documenting the evidence behind an escalation.
 
-## Projects
+[LinkedIn](https://www.linkedin.com/in/surya-pratap-dubey-7ba104142/) · [Portfolio](https://avidubey06.github.io/avidubey06/)
 
-**[SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab)**
+## Featured work
 
-A Python practice lab that flags repeated failed sign-ins followed by a success. The write-up walks through one alert from synthetic data, explains what the log supports, and records what an analyst would need before escalating. The repository includes the sample logs and five tests for the detection rule.
+### [LTE Core Operations Lab](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md)
 
-**[Detection Engineering Benchmark](https://github.com/avidubey06/soc-alert-triage-lab/blob/main/benchmarks/README.md#detection-engineering-benchmark)** compares 12 rule settings across 480 synthetic cases and documents false positives and missed detections.
+Follow an LTE attach across the eNodeB, MME, HSS and gateway, then run a Python triage tool against synthetic attempt records. The lab shows how authentication timeouts, subscriber profile errors and transport symptoms lead to different first checks. It includes an incident walkthrough and a validation checklist for provisioning, charging, roaming and node rollout.
 
-**[AI Triage Output Evaluator](https://github.com/avidubey06/soc-alert-triage-lab/blob/main/benchmarks/README.md#ai-triage-output-evaluation)** checks severity and evidence citations in structured alert summaries. The published examples use handwritten test cases.
+[Lab walkthrough](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md) · [Python analyzer](https://github.com/avidubey06/avidubey06/blob/main/telecom/triage.py) · [Sample data](https://github.com/avidubey06/avidubey06/blob/main/telecom/attempts.csv)
 
-I’m interested in SOC analyst and cybersecurity associate roles.
+| Area | What I study or practice |
+| --- | --- |
+| Mobile core | LTE/EPC attach and session establishment, 3G UMTS and 2G GSM/GPRS fundamentals |
+| Signalling | Diameter, GTP and SIP fundamentals, interface-by-interface call-flow analysis |
+| IP networking | TCP/IP, DNS, subnetting, VLANs, ACLs and routing fundamentals |
+| Operations | Python log analysis, Wireshark packet inspection, KPI interpretation and incident documentation |
+
+### [SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab)
+
+A Python practice lab for log correlation and evidence-based escalation. Includes sample events, detection tests and a benchmark that explores false positives and missed detections.
+
+## Education and training
+
+B.Tech in Computer Science, Baderia Global Institute of Engineering and Management. Cisco Networking Academy coursework and Microsoft Azure Fundamentals (AZ-900).
