@@ -1,16 +1,16 @@
 # Surya Pratap Dubey
 
-**Computer Science graduate working on mobile core troubleshooting and Python log analysis.**
+I’m Surya, a computer science graduate interested in how mobile networks handle failures. In my LTE lab, I used Python to summarize 10 simulated attach attempts, then walked through what I’d check when two of them timed out during authentication.
 
-## [LTE Core Operations Lab](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md)
+## [LTE Core Operations Lab](https://github.com/avidubey06/lte-core-operations-lab#incident-walkthrough)
 
-When an LTE attach fails, where would I look first? In this lab I follow the signalling from the eNodeB to the mobile core, then use Python to group synthetic failures by the last recorded stage. Two attempts time out during S6a authentication. The walkthrough explains what I’d check on the MME and HSS before escalating.
+I’d match transaction IDs and timestamps between the MME and HSS to see where the exchange stopped. The event trace shows a successful request and response alongside an attempt where the MME recorded a timeout.
 
-[Follow the attach and incident walkthrough](https://github.com/avidubey06/avidubey06/blob/main/telecom/README.md) · [Read the analyzer](https://github.com/avidubey06/avidubey06/blob/main/telecom/triage.py) · [Inspect the sample CSV](https://github.com/avidubey06/avidubey06/blob/main/telecom/attempts.csv)
+[Follow the two failed attempts](https://github.com/avidubey06/lte-core-operations-lab#incident-walkthrough) · [Read the analyzer](https://github.com/avidubey06/lte-core-operations-lab/blob/main/triage.py) · [Inspect the sample CSV](https://github.com/avidubey06/lte-core-operations-lab/blob/main/attempts.csv)
 
 ## [SOC Alert Triage Lab](https://github.com/avidubey06/soc-alert-triage-lab#case-review)
 
-Three failed sign-ins followed by a success trigger one alert in the sample. I’d keep it open for review and look for MFA or device records before escalating. The [detection benchmark](https://github.com/avidubey06/soc-alert-triage-lab/blob/main/benchmarks/README.md#detection-engineering-benchmark) shows how changing the threshold and time window affects which cases the rule catches.
+Three failed sign-ins followed by a success trigger one alert in the sample. I’d keep it open for review and look for MFA or device records before escalating. The [detection benchmark](https://github.com/avidubey06/soc-alert-triage-lab/blob/main/benchmarks/README.md#detection-engineering-benchmark) compares two settings on 240 synthetic holdout cases. Changing the rule from three failures in 10 minutes to four in 20 cut false positives from 40 to 20. Both settings missed all 40 distributed-source cases.
 
 ## Background
 
